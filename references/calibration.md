@@ -6,6 +6,12 @@ Meals where the estimates can be checked against what Pete later confirmed or me
 
 Photos: `~/workspace/user/files/45913_5_ftky.jpg` (first plate) and `~/workspace/user/files/45914_6_yj6y.jpg` (second helping). Scale: Filigree dinner plate 10.5 inches, Flight dinner fork 7 3/8 inches. Day context: breakfast 697 cal, lunch 625 cal, daily goal 2,410 cal.
 
+### Precision tags
+
+- Meal tag: `mixed`. The sausage rate (54 kcal/oz, label-verified) and the home-fries rate (217 kcal/cup, MyFitnessPal entry) are `tracked` in the final figures; the egg and cheddar rates are `tracked` (USDA / MyFitnessPal); every portion volume was `estimated` from the photos, never weighed.
+- As first logged, the whole meal was `estimated`: eggs, cheddar, home fries (generic 157 kcal/cup rate), and sausage (raw basis) were all photo estimates.
+- Final per-item tags: eggs `tracked` rate / `estimated` portion; cheddar `tracked` rate / `estimated` portion; home fries `tracked` (Ginnie's entry); sausage `tracked` (label-verified rate).
+
 ### What was estimated (automatic approach, then logged to MyFitnessPal)
 
 - First plate 666 cal: scrambled eggs 2 large 182, cheddar cheese 1 oz 116, home fries 1.5 cup 236, turkey sausage raw 3 oz 132.
@@ -36,7 +42,7 @@ Photos: `~/workspace/user/files/45913_5_ftky.jpg` (first plate) and `~/workspace
 - Against current MyFitnessPal (932 cal): plus 17 cal. Against the council (988 cal): minus 39 cal, almost all home fries. The Judge puts the first plate at about 1.1 cups of home fries (not 1.5) at about 215 kcal per cup.
 - Sausage verified: Jimmy Dean Fully Cooked links are 130 cal per 3 links (68 g, 2.4 oz), which is 54 kcal per oz. Proper figures are 3 oz 160 cal and 1 oz 54 cal. The MyFitnessPal patties entry (163 and 54) is 3 cal high on the first plate and exact on the second.
 - Judge limitation: the council log file was not found on disk at the workspace path the Judge looked for, so the Judge adjudicated from the verdict summary only. The log did exist at `~/council_log_2026-11-17.md`, in the home directory rather than the workspace. The skill now pins the log path.
-- Judge figures NOT yet applied to MyFitnessPal as of 19:36 EST Nov 17. Awaiting Pete's word.
+- Judge figures applied to MyFitnessPal 19:40–19:45 EST Nov 17: dinner 949 cal, day 2,271 cal, 139 cal remaining. The home-fries entries now use the Ginnie's Home Made entry (217 cal/cup), 1.1 cup on plate 1 and 0.35 cup on plate 2.
 
 ### Lessons from this case
 

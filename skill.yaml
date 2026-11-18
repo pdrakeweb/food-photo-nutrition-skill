@@ -1,5 +1,5 @@
 name: food_photo_nutrition
 title: Food photo nutrition
-description: Evaluate calories and macros in a food photo with an automatic estimate checked by a three-approach council and a judge when needed, then log it to MyFitnessPal.
+description: Evaluate calories and macros in a food photo or nutrition label with an automatic estimate checked by a three-approach council and a judge when needed, then log it to MyFitnessPal.
 category: Health and fitness
 include_in_prompt: true

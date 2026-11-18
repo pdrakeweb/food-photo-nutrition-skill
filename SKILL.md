@@ -10,9 +10,17 @@
 
 - This skill depends on the council skill at `~/workspace/custom-skills/council/SKILL.md`. Read that skill in full before the council step.
 
+## Input modes
+
+- Plated meal photo: the default. Estimate each item on the plate, using the tableware as scale, then run the council as below.
+
+- Nutrition label photo: when Pete photographs a nutrition label instead of a plated meal, read the label's values (calories, macros, serving size) by vision/OCR and use them as `tracked` data instead of estimating. Label values count as tracked only when the label is legible and the serving size is visible. If any value is unreadable, say which one and fall back to estimating only that value (tagged `estimated`). Never invent a label value.
+
 ## The default flow
 
-- Run the automatic approach first. Give your normal in-model estimate of each item on the plate, with calories and macros (protein, carbs, fat, sugar) where you can determine them, using the tableware as scale.
+- Check `references/saved-foods.md` first. If an item on the plate matches a saved food by item, brand, and preparation, use the saved values as `tracked` instead of estimating it. If it does not match, estimate fresh and, once the value is verified in MyFitnessPal, add or update the saved entry.
+
+- Run the automatic approach next. Give your normal in-model estimate of each item on the plate, with calories and macros (protein, carbs, fat, sugar) where you can determine them, using the tableware as scale.
 
 - Treat the automatic estimate as the input to the council, not the final answer. The council checks and revises it.
 
@@ -20,7 +28,19 @@
 
 - Send the council findings to a Judge only when the council confidence is low, the approaches disagree materially, or Pete asks. Give the Judge the brief and every round of the debate and nothing else from the session. The Judge rules with the proper values.
 
+- Before logging anything to MyFitnessPal, show Pete the proposed entries (food, quantity, calories) and get his confirmation or corrections. Log exactly what he confirmed, nothing he has not seen.
+
 - Report the final numbers first, then the ranges and the confidence. Keep narrative to a minimum.
+
+## Precision tags
+
+Tag every logged meal, and each item where it differs, with one of:
+
+- `tracked` — measured or weighed quantities, or values verified against MyFitnessPal or a label.
+- `estimated` — photo estimates, never measured.
+- `mixed` — a meal combining tracked and estimated items.
+
+The tag appears in the meal report to Pete and in calibration log entries. It labels the provenance of the numbers; it does not change them.
 
 ## Scale reference
 
@@ -38,13 +58,15 @@
 
 - Ask Pete, or check the record, for raw versus cooked, brand or product, and cooking fat or oil. These three decide the calorie basis and are the most common source of error.
 
-- Give the quick estimate first, then log the meal to MyFitnessPal through the browser with the saved login (account pdrake2300), then correct the estimate with the numbers MyFitnessPal confirms.
+- Give the quick estimate first, show Pete the proposed MyFitnessPal entries and get his confirmation or corrections, then log exactly what he confirmed through the browser with the saved login (account pdrake2300), then correct the estimate with the numbers MyFitnessPal confirms.
 
-- Record each meal in `references/calibration.md` with what was estimated and what was later measured or confirmed, so future meals refine the approaches.
+- Do not log anything to MyFitnessPal that Pete has not seen and confirmed.
+
+- Record each meal in `references/calibration.md` with its precision tag and with what was estimated and what was later measured or confirmed, so future meals refine the approaches.
 
 ## Output
 
-- Give per-item calories and macros with ranges, the meal total, the day total against the 2,410 goal, and the confidence level.
+- Give per-item calories and macros with ranges, the meal total, the day total against the 2,410 goal, the confidence level, and the precision tag for the meal (and per item where it differs).
 
 - Name what would change the verdict. A low confidence verdict must name the specific missing information.
 

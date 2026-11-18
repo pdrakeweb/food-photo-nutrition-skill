@@ -1,13 +1,22 @@
 # food-photo-nutrition-skill
 
-A skill for evaluating the calories and macros in a food photo.
+A skill for evaluating the calories and macros in a food photo or a nutrition label photo.
 
 ## How it works
 
-1. **Automatic approach.** The agent gives its normal in-model estimate of each item on the plate, using the tableware as scale (Pfaltzgraff Filigree dinner plate, 10.5 inches; Oneida Flight dinner fork, 7 3/8 inches; cereal bowl, about 2.4 cups to the brim).
-2. **Council.** The automatic estimate is the input to a three-seat council, not the final answer. The seats are Dimensions Estimator (plate and fork as scale, area and depth to volume), Portions Estimator (standard servings, USDA and MyFitnessPal reference values, explicit cooking-fat assumptions), and Photo Comparator (plated reference photos with stated weights and calories). Two rounds, research on. See `references/seats.md`.
-3. **Judge.** Only when the council confidence is low, the approaches disagree materially, or the user asks. The Judge rules with the proper values.
-4. **Log and calibrate.** The meal is logged to MyFitnessPal (estimate first, then corrected with the confirmed numbers), and the estimates are recorded against any later measured or known quantities in `references/calibration.md`, so the approaches improve over time.
+1. **Saved foods.** Before estimating, the agent checks `references/saved-foods.md`. An item matching a saved food by item, brand, and preparation reuses the verified values as `tracked` instead of being re-estimated.
+2. **Automatic approach.** The agent gives its normal in-model estimate of each item on the plate, using the tableware as scale (Pfaltzgraff Filigree dinner plate, 10.5 inches; Oneida Flight dinner fork, 7 3/8 inches; cereal bowl, about 2.4 cups to the brim).
+3. **Council.** The automatic estimate is the input to a three-seat council, not the final answer. The seats are Dimensions Estimator (plate and fork as scale, area and depth to volume), Portions Estimator (standard servings, USDA and MyFitnessPal reference values, explicit cooking-fat assumptions), and Photo Comparator (plated reference photos with stated weights and calories). Two rounds, research on. See `references/seats.md`.
+4. **Judge.** Only when the council confidence is low, the approaches disagree materially, or the user asks. The Judge rules with the proper values.
+5. **Confirm, then log and calibrate.** The proposed MyFitnessPal entries are shown to Pete for confirmation first, then logged exactly as confirmed (estimate first, then corrected with the confirmed numbers), and the estimates are recorded against any later measured or known quantities in `references/calibration.md`, so the approaches improve over time.
+
+## Precision tags
+
+Every meal is tagged `tracked` (measured or verified against MyFitnessPal or a label), `estimated` (photo estimate, never measured), or `mixed` (both). The tag appears in the meal report and in calibration entries. It labels the provenance of the numbers; it does not change them.
+
+## Label photos
+
+A photo of a nutrition label is a separate input mode: the label's values are read by vision/OCR and count as `tracked` when the label is legible and the serving size is visible. Any unreadable value is named and estimated only for that value, never invented.
 
 ## Hard rules
 
