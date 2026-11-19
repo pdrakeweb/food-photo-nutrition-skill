@@ -5,6 +5,7 @@ Foods Pete has logged with verified values. Check this file before estimating a 
 ## Rule
 
 - A saved food is used as `tracked` only when the item, brand, and preparation match the saved entry. If any of the three differs, estimate fresh.
+- A `third-party` tag marks values from a named third-party estimate (e.g. Macros.menu) that Pete confirmed for logging. They are not `tracked` — no label or verified MyFitnessPal rate stands behind the figure itself. A meal whose items are third-party still carries the meal tag `estimated`.
 - When a fresh estimate is later verified in MyFitnessPal, add a new entry or update the existing one. Each entry carries its source (date and meal) and its precision tag.
 - A saved rate (calories per unit) is `tracked` when the rate comes from a label or a verified MyFitnessPal entry. The portion on the plate is still `estimated` unless it was weighed or measured.
 
@@ -74,3 +75,9 @@ Foods Pete has logged with verified values. Check this file before estimating a 
 
 - Subway Spicy Italian 6-inch: 480 cal. Mayonnaise 100 cal and olive oil blend 45 cal as logged for the half footlong with oil and mayo.
 - Source: Nov 17, 2026 lunch, MyFitnessPal (half of a footlong). Tag: `tracked`.
+
+## Nov 18 lunch — Fat Head's (third-party estimate)
+
+- Fat Head's Turkey Club Wrap: whole 600 cal, 35g protein, 50g carbs, 30g fat; half 300 cal, 17.5g protein, 25g carbs, 15g fat.
+- Fat Head's French Fries (side): 365 cal as listed (4g protein, 63g carbs, 17g fat) — macros sum to ~421 cal, inconsistent with 365; use 365 cal with ~50g carbs.
+- Source: Macros.menu, third-party estimate, crawled Jan 27, 2026. NOT official Fat Head's nutrition — Fatheads publishes the menu description only. Tag: `third-party` (Pete-confirmed for MyFitnessPal logging Nov 18, 2026; MyFitnessPal readback pending at time of writing — update if the readback differs).

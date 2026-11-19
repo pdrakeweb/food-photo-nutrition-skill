@@ -1,5 +1,5 @@
 name: food_photo_nutrition
 title: Food photo nutrition
-description: Evaluate calories and macros in a food photo or nutrition label with an automatic estimate checked by a three-approach council and a judge when needed, then log it to MyFitnessPal.
+description: Record nutrition by default — food photo, text-only report, or nutrition label — with an automatic estimate checked by a three-approach council and a judge when needed, then log it to MyFitnessPal, verify the log, and validate the logged values after.
 category: Health and fitness
 include_in_prompt: true

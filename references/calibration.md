@@ -59,3 +59,96 @@ Photos: `~/workspace/user/files/45913_5_ftky.jpg` (first plate) and `~/workspace
 - Home fries, pan-fried: 220 to 250 kcal per cup (council research), Judge about 215 kcal per cup. Generic MyFitnessPal entry 157 kcal per cup is low.
 - Turkey sausage, raw: 49 kcal per oz (USDA FDC 174600). Cooked generic: 55 to 56 kcal per oz.
 - Jimmy Dean Fully Cooked turkey sausage links: 130 cal per 3 links (68 g, 2.4 oz), 54 kcal per oz. Label values beat the generic entry.
+
+### Variance record
+
+- Record #5 in `references/estimate-variance.md` (retrospective backfill, Nov 18, 2026): meal −16.8% final vs first logged; second helping −46.4%; home fries plate 1 quantity −26.7% but calories +1.7% (volume and rate errors cancelled); sausage +23.5% (rate/basis, amount unverified).
+
+## Backfill pointers — Nov 16 meals and Nov 17 breakfast (no full case written)
+
+Numbers live in `references/estimate-variance.md`; the stories live in the dated memory files. No full calibration case was written for these meals — the pointers below are the cross-reference, not a duplicate narrative.
+
+- Nov 16 lunch (grapes): variance Record #2 — grapes 4 cups on the stem / 417 cal → 1.5 cups off the stem / 156 cal (−62.6%); meal 788 → 527 cal (−33.1%). Source: `memory/2026-11-16.md` food-logging section.
+- Nov 16 dinner (pasta, feta, alfredo): variance Record #3 — pasta 1 → 1.25 cups (+25.0%); feta 1 → 3 tbsp (+194.4%); alfredo rate ~150 → 273 cal (+82.0%, rate error); meal ~637 → 720 cal (+13.0%, approximate). Source: `memory/2026-11-16.md` food-logging section.
+- Nov 17 breakfast (granola): variance Record #4 — granola 0.5 → ~0.75 cup (+50.0%); meal 272 → 377 cal (+38.6%). Source: `memory/2026-11-17.md` food-logging section.
+- Filigree bowl capacity: variance Record #6 (scale reference, not a meal) — brim ~45 oz → ~19 oz (−57.8%). Source: `~/workspace/user/reference/flight-silverware-plates.md`.
+
+## Case 2 — Nov 18, 2026 lunch (Fat Head's half Turkey Club Wrap + fries + ketchup)
+
+Photo: `~/workspace/user/files/45927_7_kmr5.jpg`. Scale: Filigree dinner plate 10.5 inches. Day context: breakfast 391 cal, daily goal 2,410 cal. Council log: `~/workspace/council_log_2026-11-18.md`. Variance record: #1 in `references/estimate-variance.md`.
+
+### Precision tags
+
+- Meal tag: `estimated`. Nothing was weighed or measured; the wrap and fries values are third-party estimates Pete confirmed for logging (see below), not label-verified.
+- Per-item tags: wrap `third-party` (Macros.menu estimate, Pete-confirmed); fries `third-party` (same source; macros inconsistent, see below); ketchup `estimated`.
+
+### What was estimated
+
+- Automatic approach (before council): wrap ~300, fries ~340, ketchup ~35, meal ~675 cal (580–800).
+- Council, 2 rounds: Dimensions R2 meal 625–720 central (range 510–850); Portions R2 meal ~675 (615–735); Photo Comparator R2 meal ~590 (450–725). Material disagreements: fry cooking method (seasoned ~180 vs restaurant ~300 kcal/100g) and hidden-layer fry weight.
+- Judge verdict (blind, confidence medium): wrap 260 (220–300), fries 340 (250–420), ketchup 30 (20–40), meal ~630 cal (490–760). Macros protein ~17g, carbs ~80g, fat ~29g, sugar ~10g.
+
+### Menu check (after the council, per Pete's clarification)
+
+- Pete clarified: half turkey club wrap and fries from Fatheads Brewery. Checked only after the council numbers were set.
+- Official menu (fatheads.com, North Olmsted): Turkey Club Wrap = smoked turkey, bacon, roasted red pepper, cheddar, chopped romaine, tomato & chipotle mayo; all wraps served with a side of fries. Fatheads publishes description only — no official nutrition.
+- Macros.menu (third-party, crawled Jan 27, 2026): whole Turkey Club Wrap 600 cal (35g protein, 50g carbs, 30g fat), half = 300 cal; French Fries 365 cal (4g protein, 63g carbs, 17g fat).
+- Revisions, with reasons: wrap 260 → 300 cal (+40, top of Judge range) — the menu resolves the meat identity (smoked turkey + bacon, not ham) and the sauce (chipotle mayo). Fries 340 → 365 cal (+25, within Judge range). Ketchup unchanged at 30 cal.
+- Fries macros inconsistent: 4×4 + 63×4 + 17×9 = ~421 cal vs 365 stated (+15%). Calories used (365); carbs not taken literally — final used ~50g carbs. Wrap macros consistent (610 vs 600, +1.7%).
+
+### What Pete confirmed
+
+- Final: wrap 300, fries 365, ketchup 30, meal 695 cal. Macros protein ~22g, carbs ~83g, fat ~32g, sugar ~10g. Day total 391 + 695 = 1,086 cal, 1,324 remaining vs 2,410 goal.
+- Pete said "go ahead and log it" — logged to MyFitnessPal the same day. Readback confirmed: calories match exactly (695 cal, day 1,086, 1,324 remaining). Logged entries were the closest database entries (no exact Fat Head's entries): Market Sandwich Turkey Club Wrap 0.5 wrap 300, French Fries 1 serving medium 365, Portland Ketchup Company Organic Ketchup 2 tbsp 30. MyFitnessPal lunch macros are 85g carbs, 30g fat, 18g protein — vs the council final 83g carbs, 32g fat, 22g protein (protein −4g, fat −2g, carbs +2g, from the closest-entry substitution, not a calorie change).
+- Variance (final vs blind Judge): meal +10.3% (+65 cal); wrap +15.4%; fries +7.4%; ketchup 0%. Final vs automatic estimate: meal +3.0%. Recorded as variance record #1; n=1, no correction in effect.
+
+### Lessons from this case
+
+- The blind council was low on both main items but inside its own ranges — wrap at the top of its range, fries in the middle. A single +10% meal gap is observation, not a correction.
+- A restaurant menu description can resolve an open identity question (meat, sauce) that moves the number; that is the legitimate use of the post-council check.
+- Third-party menu macros can be internally inconsistent — always run the protein×4 + carbs×4 + fat×9 check before using them.
+
+## Case 3 — Nov 18, 2026 dinner (Barilla Protein+ penne, alfredo, green beans with butter)
+
+Photo: `~/workspace/user/files/45940_12_wz4f.jpg`. Scale: Filigree dinner plate 10.5 inches, Flight dinner fork 7 3/8 inches. Day context: breakfast 391 cal, lunch 695 cal, daily goal 2,410 cal. Council log: `~/workspace/council_log_2026-11-18.md`. Variance record: #7 in `references/estimate-variance.md`.
+
+### Precision tags
+
+- Meal tag: `mixed`. The penne rate is `tracked` (saved food, MyFitnessPal-verified 190 cal/cup); the alfredo rate is `tracked` (saved food, MyFitnessPal-verified 273 cal per 1/3 cup); the beans rate is `estimated` (closest entry 70 cal/cup vs ~73 target).
+- Quantities Pete-stated: penne "a little less" than 2 cups, estimated at 1.75 cups; sauce 2/3 cup and beans 1.25 cups as Pete stated.
+
+### What was estimated
+
+- Automatic approach (before council): penne ~400, sauce ~180, beans ~75, meal ~650 cal (550–800). The sauce was an unknown white sauce, estimated at ~1/3 cup.
+- Council, 2 rounds, no Judge (gate not met — seats converged): Dimensions R2 meal ~600 (485–860); Portions R2 meal ~655 (555–850); Photo Comparator R2 meal ~665 (555–850). Council synthesis: meal ~640 cal (555–850), confidence medium. Per-item synthesis: penne ~370, sauce ~155, beans ~110.
+
+### Pete's corrections
+
+- Penne is a little less than 2 cups, and it is Barilla Protein+ pasta.
+- The sauce is alfredo, more like 2/3 cup — not the ~1/3 cup of unknown white sauce in the estimate.
+- Green beans 1.25 cups.
+- Revised before logging: penne 1.75 cups 333, alfredo 2/3 cup 546, beans 1.25 cups 90, meal ~969 cal.
+
+### Logged (MyFitnessPal readback)
+
+- "Steffin Barilla - Cooked Protein Plus Pasta 03.17.17", 1.75 cups, 333 cal.
+- "Homemade - Alfredo Sauce With Cream Cheese", 0.67 cup, 546 cal (verified 410 cal per 0.5 cup before adding; found via database search, not My Foods).
+- "Birds Eye - Butter Sauced Green Beans", 1.25 cups, 88 cal.
+- Dinner 967 cal (81g carbs, 64g fat, 33g protein); day 2,053 cal, 357 remaining vs 2,410 goal.
+- Two earlier alfredo attempts (549 and 547 cal) were deleted and the exact 546-cal entry kept.
+
+### Lessons from this case
+
+- The success-check gap: the browser logged only the pasta first and Pete caught the missing entries live. The skill's new logging success check exists because of this meal — a partial log must be caught by the skill's own flow, not by Pete.
+- Sauce identity plus volume dominate: 1/3 cup of an unknown white sauce at ~155 vs 2/3 cup alfredo at 546 is a ~390 cal swing. Confirm sauce identity and volume before finalizing.
+- Do not infer cooked protein from the dry-basis label: my rough macro guess was ~45g protein vs MyFitnessPal's 33g. Use the logged entry's macros.
+
+### Reference values established by this case
+
+- Barilla Protein+ cooked penne: 190 cal/cup (MyFitnessPal-verified Nov 18, 144 g/cup).
+- Homemade cream-cheese alfredo: 273 cal per 1/3 cup (MyFitnessPal-verified Nov 18, 410 cal per 0.5 cup).
+- Birds Eye Butter Sauced Green Beans: 70 cal/cup (closest cup-based buttered beans entry, Nov 18).
+
+### Variance record
+
+- Record #7 in `references/estimate-variance.md`: meal +48.8% final vs automatic (penne −16.8%, sauce +203.3%, beans +17.3%); meal +51.1% final vs council synthesis (640 cal). The sauce variance is driven by Pete's corrections, not estimator error on a fixed basis.
