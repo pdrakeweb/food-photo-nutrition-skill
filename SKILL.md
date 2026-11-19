@@ -30,7 +30,7 @@ Effort order, every meal: (a) quick report to Pete first — his standing rule i
 
 - Restaurant check (macros.menu) next, for named-restaurant meals only — after the council, never before. See "Restaurant check — macros.menu" below.
 
-- Before logging anything to MyFitnessPal, show Pete the proposed entries (food, quantity, calories) and get his confirmation or corrections. Log exactly what he confirmed, nothing he has not seen.
+- Before logging anything to MyFitnessPal, show Pete the proposed entries (food, quantity, calories) and get his confirmation or corrections — EXCEPT when Pete reports nutrition without explicitly asking for an estimate (Pete, Nov 18, 2026): then log it directly without asking; his report is the instruction to log. Log exactly what he confirmed (or, under that exception, what he reported), nothing he has not seen.
 
 - Log the confirmed entries, then run the logging success check (see "Logging success check"). Never report logging as complete until the readback confirms every entry.
 
@@ -88,7 +88,7 @@ The tag appears in the meal report to Pete and in calibration log entries. It la
 
 - Ask Pete, or check the record, for raw versus cooked, brand or product, and cooking fat or oil. These three decide the calorie basis and are the most common source of error.
 
-- Give the quick estimate first, show Pete the proposed MyFitnessPal entries and get his confirmation or corrections, then log exactly what he confirmed through the browser with the saved login (account pdrake2300), run the logging success check before reporting logging complete, then run post-logging validation when a trigger applies and correct any material error found.
+- Give the quick estimate first, then log through the browser with the saved login (account pdrake2300) — show Pete the proposed MyFitnessPal entries and get his confirmation or corrections first ONLY when he explicitly asks for an estimate; when he reports nutrition without explicitly asking for an estimate, log directly without asking (Pete, Nov 18, 2026). Run the logging success check before reporting logging complete, then run post-logging validation when a trigger applies and correct any material error found.
 
 - Do not log anything to MyFitnessPal that Pete has not seen and confirmed.
 

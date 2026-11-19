@@ -81,3 +81,8 @@ Foods Pete has logged with verified values. Check this file before estimating a 
 - Fat Head's Turkey Club Wrap: whole 600 cal, 35g protein, 50g carbs, 30g fat; half 300 cal, 17.5g protein, 25g carbs, 15g fat.
 - Fat Head's French Fries (side): 365 cal as listed (4g protein, 63g carbs, 17g fat) — macros sum to ~421 cal, inconsistent with 365; use 365 cal with ~50g carbs.
 - Source: Macros.menu, third-party estimate, crawled Jan 27, 2026. NOT official Fat Head's nutrition — Fatheads publishes the menu description only. Tag: `third-party` (Pete-confirmed for MyFitnessPal logging Nov 18, 2026; MyFitnessPal readback pending at time of writing — update if the readback differs).
+
+## Nov 18 snacks
+
+- Cheez-It Grooves Sharp White Cheddar: 195 cal per 25 crackers (140 cal per 18 crackers / 29 g; ~7.8 cal per cracker). MFP macros per 25 crackers: 8 g fat, 26 g carbs, 3 g protein, 0 g sugar, 334 mg sodium — the 0 g sugar conflicts with the label (~2.8 g per 25 crackers); calories verified, sugar field is a database gap.
+- Source: Nov 18, 2026 snack, MyFitnessPal. Tag: `tracked`.

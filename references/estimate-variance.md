@@ -16,9 +16,9 @@ Records of how the council's blind estimates compare with what was finally logge
 
 Recomputed Nov 18, 2026 after the retrospective backfill (records #2–#6) and Record #7 (Nov 18 dinner). "Final vs first estimate" throughout; Record #1's first estimate is the Judge blind value, backfill records' first estimate is the first logged / first estimated value stated per row.
 
-- Records: 6 meal records (#1–#5, #7) + 1 scale-reference record (#6, not a meal). No correction in effect — no category has n ≥ 5 (max n=2).
-- Meal-level mean variance, final vs first estimate: +10.1% (range −33.1% to +48.8%, n=6). By source type: third-party +10.3% (n=1, Record #1); Pete-confirmed / MyFitnessPal home meals +10.1% (range −33.1% to +48.8%, n=5).
-- By category, final vs first estimate (calorie variance; n = item rows): wraps/sandwiches +15.4% (n=1); fries/sides +4.6% (range +1.7% to +7.4%, n=2); condiments 0.0% (n=1); fruit −62.6% (n=1); pasta/grains +4.1% (n=2, range −16.8% to +25.0%); cereal/granola +50.0% (n=1); cheese +94.6% (range −5.2% to +194.4%, n=2); sauce +142.7% (n=2, range +82.0% to +203.3%); eggs +1.6% (n=1); meat/sausage +23.5% (n=1, rate/basis error, amount unverified); vegetables +17.3% (n=1).
+- Records: 7 meal records (#1–#5, #7, #8) + 1 scale-reference record (#6, not a meal). No correction in effect — no category has n ≥ 5 (max n=2).
+- Meal-level mean variance, final vs first estimate: +15.8% (range −33.1% to +50.0%, n=7). By source type: third-party +10.3% (n=1, Record #1); Pete-confirmed / MyFitnessPal home meals +16.8% (range −33.1% to +50.0%, n=6).
+- By category, final vs first estimate (calorie variance; n = item rows): wraps/sandwiches +15.4% (n=1); fries/sides +4.6% (range +1.7% to +7.4%, n=2); condiments 0.0% (n=1); fruit −62.6% (n=1); pasta/grains +4.1% (n=2, range −16.8% to +25.0%); cereal/granola +50.0% (n=1); cheese +94.6% (range −5.2% to +194.4%, n=2); sauce +142.7% (n=2, range +82.0% to +203.3%); eggs +1.6% (n=1); meat/sausage +23.5% (n=1, rate/basis error, amount unverified); vegetables +17.3% (n=1); crackers +50.0% (n=1).
 - Portion-fraction errors (meal-level rows, no item category): second helping −46.4% (n=1, Record #5).
 - Size errors by quantity (where recorded): granola +50.0%, grapes −62.5%, pasta +25.0%, feta +200.0%, home fries (plate 1) −26.7%, bowl brim −57.8%. Directions are mixed — no consistent under- or over-estimation direction in the size errors so far. The Nov 18 meal's +10.3% does not generalise to a systematic underestimate: meal-level mean across 5 meals is +2.4%.
 
@@ -140,3 +140,22 @@ Notes:
 - Beans: closest cup-based buttered entry (Birds Eye, 70 cal/cup) vs ~73 target, so 88 vs 90 target.
 - MyFitnessPal dinner macros 81g carbs, 64g fat, 33g protein; macro-consistency 33×4 + 81×4 + 64×9 = 1,032 vs 967 stated (+6.7%, inside the ~10% band).
 - Final = Pete-confirmed values, Nov 18, 2026 ("Log it"), MyFitnessPal readback: penne 333, sauce 546, beans 88, meal 967.
+
+## Record #8 — Nov 18, 2026 snack, home (Cheez-It Grooves Sharp White Cheddar, 25 crackers)
+
+Text-only report, no photo. Council log: `~/workspace/council_log_2026-11-18.md` (pre-logging verdict 21:29; post-logging validation same file). Confidence: medium. Meal precision tag: `estimated`.
+
+No Judge in the validation council — gate not met (seats converged, no material disagreement). The Judge blind value below is from the pre-logging council (21:29).
+
+| Item | Category | Automatic | Dimensions (R2) | Portions (R2) | Photo Comparator (R2) | Judge blind | Published / third-party | Final logged | Var final vs Judge | Var final vs automatic | Var published vs Judge |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Cheez-It Grooves Sharp White Cheddar, 25 crackers | crackers | ~130 | ~195 | ~194 | ~194 | ~194 (190–200) | ~194 (label 140 cal per 18 crackers / 29 g, scaled ×25/18; cheezit.com, official, Nov 2026) | 195 | +0.5% | +50.0% | 0.0% |
+| Meal total | — | ~130 | ~195 | ~194 | ~194 | ~194 (190–200) | ~194 | 195 | +0.5% | +50.0% | 0.0% |
+
+Notes:
+- The automatic estimate (~130) was wrong on the serving basis: it took the label as 140 cal per 27 crackers (30 g) — that serving belongs to Cheez-It Original, not Grooves. Grooves serving is 18 crackers (29 g) = 140 cal. The Nov 16 Bold Cheddar MFP entry (234 cal / 30 crackers) was correct per label all along; the Nov 16 automatic estimate (160) was the error — the same serving-basis mistake, a day earlier.
+- Validation council (post-logging) confirmed: all three seats CONFIRM, positions unchanged in round 2. Logged 195 vs label-scaled ~194 (+0.5%); meal total +0.5% vs the ~194 verdict.
+- Sugar: MFP shows 0 g vs ~2.8 g scaled from the current label (2 g per 18 crackers). Database data-quality note, not a material error: ~2.8 g sugars ≈ 11 kcal, inside the 26 g carbs. The non-Grooves wrong-product inference (0 g sugar matches the non-Grooves White Cheddar profile) is refuted by the calories: a non-Grooves profile would log ~150 cal for 25 crackers, not 195; fat (8 g vs ~8.3 g) and sodium (334 mg vs ~333 mg) also track Grooves. Sugars figure is contested across sources (1 g Mar 2025 label capture, 2 g current label, 3 g stale Jul 2018 USDA record).
+- Carbs: MFP 26 g vs 27.8 g scaled (−6.5%). Macro-consistency: 3×4 + 26×4 + 8×9 = 188 vs 195 stated (+3.7%, inside the ~10% band).
+- Count stated by Pete (25 crackers), not weighed — the estimate is conditional on the count at ~7.8 cal per cracker. Open NEEDs (weighed mass, photo, physical box label) would change the verdict only if they showed a different product or count.
+- Final = Pete-reported values logged directly (log-without-asking rule, Nov 18, 2026), MyFitnessPal readback: "Kellogg's Cheez It - Cheez It Grooves Sharp White Cheddar, 25.02 Cracker Chips (29 g)", 1.39 servings, 195 cal; Snacks subtotal 195; day 2,248 cal, 162 remaining vs 2,410 goal.

@@ -152,3 +152,47 @@ Photo: `~/workspace/user/files/45940_12_wz4f.jpg`. Scale: Filigree dinner plate 
 ### Variance record
 
 - Record #7 in `references/estimate-variance.md`: meal +48.8% final vs automatic (penne −16.8%, sauce +203.3%, beans +17.3%); meal +51.1% final vs council synthesis (640 cal). The sauce variance is driven by Pete's corrections, not estimator error on a fixed basis.
+
+## Case 4 — Nov 18, 2026 snack (Cheez-It Grooves Sharp White Cheddar, 25 crackers)
+
+Text-only report, no photo. Day context: breakfast 391 cal, lunch 695 cal, dinner 967 cal, daily goal 2,410 cal. Council log: `~/workspace/council_log_2026-11-18.md` (pre-logging verdict 21:29; post-logging validation same file). Variance record: #8 in `references/estimate-variance.md`.
+
+### Precision tags
+
+- Meal tag: `estimated`. Count stated by Pete (25 crackers), not weighed; no saved-food match for this flavor (the Bold Cheddar entry does not transfer).
+- The logged calorie rate is label-verified (140 cal per 18 crackers / 29 g); the portion is `estimated` (counted, not weighed). The sugar field (0 g) is a database gap, not a verified value.
+
+### What was estimated
+
+- Automatic approach (quick estimate to Pete): ~130 cal — wrong serving basis (140 cal per 27 crackers / 30 g, which is Cheez-It Original, not Grooves).
+- Council, 2 rounds + Judge: ~194 cal (190–200), fat ~8.3 g, carbs ~27.8 g, protein ~2.8 g, sugar ~2.8 g (1.4–4.2 g, contested). Confidence medium.
+- Proposed entry: 25 crackers, 1.39 servings of the 18-cracker / 140 cal entry, ~194 cal.
+
+### Logged (MyFitnessPal readback)
+
+- "Kellogg's Cheez It - Cheez It Grooves Sharp White Cheddar, 25.02 Cracker Chips (29 g)", 1.39 servings, 195 cal (26 g carbs, 8 g fat, 3 g protein, 0 g sugar, 334 mg sodium).
+- Snacks subtotal 195; day 2,248 cal, 162 remaining vs 2,410 goal. Breakfast, lunch, dinner untouched.
+- Logged directly under Pete's Nov 18 log-without-asking rule (he reported nutrition without explicitly asking for an estimate); exact-flavor entry found, no closest-entry substitution.
+
+### Post-logging validation
+
+- Validation council (research + 3 seats, 2 rounds, no Judge — gate not met): all three seats CONFIRM, positions unchanged in round 2. Logged 195 vs label-scaled ~194 (+0.5%). Confidence medium.
+- Sugar: MFP 0 g vs ~2.8 g scaled — database data-quality note, not a material error (~11 kcal). Wrong-product inference refuted: non-Grooves White Cheddar would be ~150 cal for 25 crackers, not 195; fat and sodium track Grooves.
+- Carbs 26 g vs 27.8 g scaled (−6.5%). Macro-consistency 188 vs 195 (+3.7%, inside band).
+
+### Lessons from this case
+
+- Grooves serving is 18 crackers / 29 g = 140 cal — NOT 27 crackers / 30 g. The 27-cracker serving belongs to Cheez-It Original. Check the serving basis for the exact product before estimating packaged crackers; the flavor and the product line both matter.
+- The Nov 16 Bold Cheddar MFP entry (234 cal / 30 crackers) was correct per label all along; the Nov 16 automatic estimate (160) was the error — the same serving-basis mistake, a day earlier. One wrong premise repeated across two days.
+- A 0 g sugar field in a MyFitnessPal entry is not evidence of a wrong product when calories, fat, carbs, protein, and sodium all track the label — check the calorie-bearing fields first; sugar is a sub-component of carbs and cannot move the calorie verdict by more than ~11 kcal here.
+- The sugars figure for this product is contested across sources (1 g / 2 g / 3 g) and has changed over time; the current manufacturer label (2 g) is the authority, and the physical box in hand outranks all of them.
+
+### Reference values established by this case
+
+- Cheez-It Grooves (both flavors): 140 cal per 18 crackers (29 g), ~7.8 cal per cracker; 6 g fat, 20 g carbs, 2 g protein, 2 g total sugars, 240 mg sodium per serving (current label, cheezit.com, Nov 2026).
+- Sharp White Cheddar sodium 240 mg per serving vs Bold Cheddar 270 mg — the flavors differ mainly on sodium.
+- Non-Grooves Cheez-It White Cheddar: 150 cal per 25 crackers (30 g), 0 g sugars — different product, different serving; do not confuse with Grooves.
+
+### Variance record
+
+- Record #8 in `references/estimate-variance.md`: final vs automatic +50.0% (195 vs ~130); final vs Judge +0.5% (195 vs ~194); meal +50.0% vs the automatic estimate, +0.5% vs the council verdict.
